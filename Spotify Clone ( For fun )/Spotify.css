@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+.container{
+    display: flex;
+    background-color: black;
+}
+.lb1{
+    transition: 0.2s ease;
+}
+.left{
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: black;
+    font-family: "Baloo 2";
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+    /*height: 95vh;*/
+    width: 23vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0;
+    margin: 2px;
+}
+.left_top{
+    margin-bottom: 5px;
+    background-color: rgb(25, 22, 22);
+    color: white;
+    width: 22vw;
+    border: 2px solid black;
+    padding: 0;
+    border-radius: 5px;
+}
+.logo{
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.left_top ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    gap: 18px;
+    position: relative;
+    left: 13px;
+    opacity: 80%;
+}
+.invert{
+    filter: invert(1);
+}
+.home2{
+    position: relative;
+    top: -12px;
+    transition: 0.2s ease;
+}
+.home2:hover{
+    font-size: 20px;
+    opacity: 100%;
+}
+.home1{
+    transition: 0.2s ease;
+}
+.home1:hover{
+    font-size: 20px;
+    opacity: 100%;
+}
+.left_bottom{
+    padding-top: 20px;
+    gap: 25px;
+    display: flex;
+    width: 22vw;
+    background-color: rgb(25, 22, 22) ;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.library{
+    transition: 0.2s ease;
+    position: relative;
+    width: 24px;
+    filter: invert(1);
+    left: 10px;
+}
+.b1{
+    background-color:rgb(25, 22, 22) ;
+    position: relative;
+    left: 110px;
+    border-radius: 100%;
+    color: white;
+    width: 45px;
+}
+.container2{
+    background-color: rgb(25, 22, 22) ;
+    margin: 0;
+    padding: 0;
+    /*overflow-x: hidden;
+    overflow-y: auto;*/
+    width: 20.9vw;
+    position: relative;
+    left: 3px ;
+    height:32vh ;
+}
+.lb1box1{
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 16px;
+    font-weight: 400;
+    width: 20vw;
+    border: 2px solid rgb(31, 28, 28);
+    border-radius: 10px;
+    background-color: rgb(42, 39, 39);
+    position: relative;
+    left: 0px;
+    padding: 0;
+    padding-left: 20px;
+    bottom:3px;
+    height: 35vh;
+}
+.round_box{
+    transition: 0.2s ease;
+    font-size: 13px;
+    width: 8vw;
+    height: 5vh;
+    background-color: white;
+    padding: 0;
+    border-radius: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+    font-weight: 800;
+}
+.H1{
+    font-weight: 600;
+    position: relative;
+    bottom: 15px;
+}
+.H2{
+    font-weight: 500;
+    position: relative;
+    bottom: 30px;
+}
+.lb2box2{
+    border-radius: 10px;
+    background-color:rgb(42, 39, 39) ;
+    color: white;
+    border: 2 px solid  rgb(31, 28, 28);
+    position: relative;
+    left: 17px ;
+    padding-left: 20px;
+}
+.h11{
+    position: relative;
+    top: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.h22{
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    bottom: 10px;
+}
+.library:hover{
+    transform: scale(1.1);
+}
+.b2{
+    font-size: 13px;
+    width: 10vw;
+    height: 5vh;
+    background-color: white;
+    padding: 0;
+    border-radius: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 25px;
+    font-weight: 800;
+}
+.ftr{
+    position: relative;
+    top: 20px;
+    left: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer ul li {
+    list-style: none;
+}
+.footer ul li a{
+    transition: 0.2s ease;
+    font-family: "Baloo 2";
+    font-size: 11px;
+    background-color: rgb(31, 28, 28);
+    color: white;
+    filter: opacity(80%);
+    text-decoration: none;
+}
+.lb1:hover{
+    transform: scale(1.1);
+}
+.english{
+    padding: 0;
+    margin: 0;
+    width: 21vw;
+    position: relative;
+    left: 80px;
+}
+.english button{
+    font-family: "Baloo 2";
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 25px;
+    background-color: rgb(31, 28, 28);
+    color: white;
+    height: 5vh;
+    width: 7vw;
+    border-radius: 25px;
+}
+.english button img{
+    width: 20px;
+    filter: invert(1);
+}
+.right{
+    width: 76vw;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.header{
+    position: relative;
+    top: 5px;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    padding-left: 25px;
+    background-color: rgb(25, 22, 22);
+    width: 73vw;
+    border: 1px solid rgb(25, 22, 22);
+    margin-bottom: 5px;
+    height: 7vh;
+}
+.header button{
+    position: relative;
+    top: 15px;
+    padding: 0;
+    margin: 0;
+}
+.header button svg{
+    width: 20px;
+    height: 20px;
+}
+.sign{
+    position: relative;
+    left: 900px;
+    bottom: 35px;
+}
+.sign button{
+    transition: 0.2s ease;
+    opacity: 85%;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: "Baloo 2";
+    height: 5vh;
+    width: 6vw;
+    border-radius: 20px;
+}
+.sign button:hover{
+    opacity: 150%;
+    font-size: 18px;
+}
+.n1{
+    filter: invert(1);
+}
+.rightbottom{
+    border-radius: 5px;
+    width:73vw;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(25, 22, 22);
+    color: white;
+    padding-left: 15px;
+    height: 83vh;
+}
+.heading{
+    position: relative;
+    top: 13px;
+}
+.rightbottom h2{
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+    font-family: "Baloo 2";
+    font-weight: 600;
+}
+.cardcontainer{
+    gap: 30px;
+    height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.card{
+    position: relative;
+    bottom: 10px;
+    background-color: rgb(25, 22, 22);
+    width: 140px;
+    padding: 8px;
+    border: 2px solid rgb(25, 22, 22);
+    height: 34vh;
+}
+.card img{
+    transition: transform 0.2s ease;
+}
+.card img:hover{
+    transform: scale(1.2);
+}
+.card:hover{
+    background-color: rgb(54, 53, 53);
+}
+.author{
+    font-family: "Baloo 2";
+    position: relative;
+    bottom: 35px;
+}
+.card img{
+    border-radius: 5px;
+}
+.playbar{
+    top: -610px;
+    border-radius: 20px;
+    height: 45px;
+    position: relative;
+    left: 75px;
+    width: 73%;
+    background-color: rgb(59, 54, 54);
+}
+.buttons{
+    position: absolute;
+    left: 370px;
+    top: 5px;
+}
+.control{
+    height: 5vh;
+    border-radius: 50%;
+}
+.j{
+    background-color:rgb(42, 39, 39);
+    position:relative;
+    right:25px;
+}
+.j:hover{
+    background-color: rgb(107, 104, 104);
+    border-radius: 10px;
+}
+.j button{
+    font-family: "Baloo 2";
+    border-radius: 8px;
+}
+.j button:hover{
+    font-size: 15px;
+}
+.innerplaybar{
+    font-family: "Baloo 2";
+    position: relative;
+    top: 10px;
+    left: 25px;
+}
+.card img{
+    object-fit: cover;
+}
+.sign button a{
+    text-decoration: none;
+    color: black;
+}
+.round_box:hover{
+    font-size: 15px;
+}
+.ftr li a:hover{
+    font-size: 15px;
+    opacity: 1000%;
+}
+.forms{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 100px;
+}
+.form input{
+    border-radius: 20px;
+}
+.innerpp{
+    border-radius: 10px;
+    font-family: "Baloo 2";
+    font-weight: 800;
+}
+/* Hide scrollbars but keep functionality */
+.left, .lb1box1, .container2 ,.cardcontainer{
+    overflow: hidden;   /* Hide the scrollbar */
+    -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer 10+ */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+/* Custom scrollbar styling for webkit browsers (e.g., Chrome, Safari) */
+.left::-webkit-scrollbar, .lb1box1::-webkit-scrollbar, .container2::-webkit-scrollbar ,.cardcontainer::-webkit-scrollbar{
+    display: none;  /* Hide the scrollbar */
+}
+
+/* Ensures that content can still be scrolled */
+.left, .lb1box1, .container2 ,.cardcontainer {
+    overflow-y: scroll; /* Keep vertical scrolling enabled */
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link rel="stylesheet" href="Spotify.css">
+</head>
+<body>
+    <script src="Spotify.js"></script>
+    <div class="container">
+        <div class="left">
+            <div class="left_top">
+                <img class="logo invert" src="logo.svg" alt="">
+                <br>
+                <ul>
+                    <li class="home1"><img class="invert" src="home.svg" alt="">Home</li>
+                    <br>
+                    <li class="home2"><img class="invert" src="search.svg" alt="">Search</li>
+                </ul>
+            </div>
+            <div class="left_bottom">
+                <img class="library" src="library_logo.svg" alt="">
+                <div class="lb1">Your library</div>
+                <button class="b1">+</button>
+                <div class="container2">
+                    <div class="lb1box1">
+                        <h4 class="H1">Get your first playlist.</h4>
+                        <h5 class="H2">It's easy , we'll help you.</h5>
+                        <button class="round_box">Show playlist</button>
+                        <h4 style="font-weight:400; position: relative; bottom: 30px;">Your playlist will display here </h4>
+                        <div style="font-weight: 400; position: relative; bottom: 30px;">There are total of 14 songs available</div>
+                    </div>
+                    <!--<div class="lb2box2">
+                        <h4 class="h11">Let's find some podcasts to follow</h4>
+                        <h5 class="h22">We'll keep you updated on new episodes</h5>
+                        <button class="b2">Browse Podcasts</button>
+                    </div>-->
+                </div>
+                <div class="footer">
+                    <ul class="ftr">
+                        <li><a href="https://www.spotify.com/in-en/legal/end-user-agreement/">Legal</a></li>
+                        <li><a href="https://www.spotify.com/in-en/safetyandprivacy">Safety&Privacy</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About us</a></li>
+                        <li><a href="https://www.spotify.com/in-en/accessibility">accessibility</a></li>
+                        <li><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="english">
+                    <button><img src="english.svg" alt="">English</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <button><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="298" height="512" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 298 511.93"><path fill-rule="nonzero" d="M285.77 441c16.24 16.17 16.32 42.46.15 58.7-16.16 16.24-42.45 16.32-58.69.16l-215-214.47c-16.24-16.16-16.32-42.45-.15-58.69L227.23 12.08c16.24-16.17 42.53-16.09 58.69.15 16.17 16.24 16.09 42.54-.15 58.7l-185.5 185.04L285.77 441z"/></svg></button>
+                <button><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="298" height="512" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 298 511.93"><path fill-rule="nonzero" d="M70.77 499.85c-16.24 16.17-42.53 16.09-58.69-.15-16.17-16.25-16.09-42.54.15-58.7l185.5-185.03L12.23 70.93c-16.24-16.16-16.32-42.45-.15-58.7 16.16-16.24 42.45-16.32 58.69-.15l215.15 214.61c16.17 16.25 16.09 42.54-.15 58.7l-215 214.46z"/></svg></button>
+                <div class="sign">
+                    <button><a href="https://www.spotify.com/in-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F" target="_blank">sign up</a></button>
+                    <button><a href="https://accounts.spotify.com/en-GB/login?continue=https%3A%2F%2Fopen.spotify.com%2F" target="_blank">log in</a></button>
+                </div>
+            </div>
+            <div class="rightbottom">
+                <div class="heading">
+                    <h2>Available Spotify like Playlist</h2>
+                </div>
+                <div class="cardcontainer">
+                    <div class="card">
+                        <img aria-hidden="false" draggable="false" loading="lazy" src="https://as2.ftcdn.net/v2/jpg/05/99/52/19/1000_F_599521927_Kl13r9HkNehfNX0oUqol7T0QCFRD9ht9.jpg" data-testid="card-image" alt="" class="mMx2LUixlnN_Fu45JpFB yMQTWVwLJ5bV8VGiaqU3 yOKoknIYYzAE90pe7_SE Yn2Ei5QZn19gria6LjZj" height="150" width="140">
+                        <h4 style="position: relative; bottom: 12px; font-family: 'Baloo 2'; font-weight: 600;">Anime OSTs</h4>
+                        <p class="author">Bliss OSTs, Anime Song</p>
+                    </div>
+                    
+                </div>
+                <div class="playbar">
+                    <div class="innerplaybar">Currently Playing </div>
+                    <div class="buttons">
+                        <button class="control"><img src="prev_track.svg" alt=""></button>
+                        <button class="control"><img src="play_track.svg" alt=""></button>
+                        <button class="control"><img src="next_track.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
