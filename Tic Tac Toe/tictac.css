@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+body {
+    font-family: "Baloo 2";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/532/221/non_2x/tic-tac-toe-seamless-background-on-dark-blue-illustration-vector.jpg");
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color:white;
+    border: 2px solid rgb(226, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.cell:hover {
+    background-color: rgb(226, 216, 216);
+}
+
+.hidden {
+    display: none;
+}
+
+#winner-message {
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: rgb(81, 81, 241);
+    color: rgb(241, 215, 215);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#restart-button:hover {
+    background-color: rgb(81, 81, 241);;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Baloo 2";
+    font-size: 200px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210912/pngtree-aesthetic-background-pink-pastel-image_866344.jpg");
+    object-fit: contain;
+}
+.container1 button{
+    transform: scale(6);
+    border-radius: 50px;
+    transition: 0.2s ease;
+}
+.x:hover{
+    transform: scale(7);
+    color: black;
+}
+.x a{
+    color: rgb(67, 66, 66);
+    text-decoration: none;
+}
