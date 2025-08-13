@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+body {
+    font-family: "Baloo 2";
+    text-align: center;
+    background-color: white;
+    background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+body video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    object-fit: cover;
+}
+.container {
+    position: relative;
+    top: 100px;
+    margin: 50px auto;
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input, button {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid rgb(194, 178, 178);
+    border-radius: 5px;
+}
+button {
+    background: rgb(38, 38, 215);
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+#weatherInfo {
+    margin-top: 20px;
+}
+#city{
+    font-size: 17px;
+    font-family: "Baloo 2" ;
+}
+.container button{
+    font-family: "Baloo 2";
+    font-size: 17px;
+}
