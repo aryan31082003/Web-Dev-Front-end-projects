@@ -1,0 +1,267 @@
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: white;
+    /* This background is for the very outer body, not the chat area specifically */
+    background-image: url('https://wallpaperbat.com/img/343087-depth-of-field-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps background fixed when scrolling if body is scrollable */
+}
+
+#loginScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for login screen */
+    color: white; /* Text color for login screen */
+}
+#loginScreen input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 250px;
+    text-align: center;
+}
+#loginScreen button {
+    padding: 10px 20px;
+    background-color: rgb(27, 27, 218);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+#loginScreen button:hover {
+    background-color: #0056b3;
+}
+
+
+#chatContainer {
+    display: flex;
+    height: 100vh;
+    /* The main background for the chat application */
+    /* If you want this to be the overall chat background, ensure `main` has a transparent background */
+    /* For now, removing redundant background-image from here as main will handle it */
+    /* background-image: url('https://wallpaperbat.com/img/343087-depth-of-field-wallpaper.jpg'); */
+}
+
+aside {
+    width: 200px;
+    background: rgb(94, 93, 93);
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex; /* Added for block list layout */
+    flex-direction: column; /* Added for block list layout */
+}
+
+aside h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px; /* Spacing between lists */
+}
+
+aside ul li {
+    display: flex; /* Align username and button */
+    justify-content: space-between; /* Space out items */
+    align-items: center;
+    padding: 5px 0;
+}
+
+.username-list-item {
+    flex-grow: 1; /* Allow username to take space */
+}
+
+.block-button, .unblock-button {
+    background: none;
+    border: 1px solid; /* Add a border */
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.7em;
+    padding: 3px 6px;
+    margin-left: 5px;
+    transition: background-color 0.2s;
+}
+
+.block-button {
+    color: rgb(240, 45, 45); /* Red for block */
+    border-color: rgb(241, 152, 152);
+}
+.block-button:hover {
+    background-color: rgb(240, 45, 45);
+    color: white;
+}
+
+.unblock-button {
+    color: rgb(63, 187, 63); /* Green for unblock */
+    border-color: rgb(115, 234, 115);
+}
+.unblock-button:hover {
+    background-color:rgb(63, 187, 63);
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* The main chat background */
+    background-image: url('https://staticdelivery.nexusmods.com/images/3333/40545270-1616142754.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Needed for the overlay */
+}
+
+/* Optional: Add a semi-transparent overlay for better text readability */
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Place it above the background image but below content */
+}
+
+/* Adjust z-index for content inside main to be above the overlay */
+#messages, #typingIndicator, #messageForm {
+    position: relative;
+    z-index: 2;
+}
+
+
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message.mine {
+    background: rgb(230, 215, 215);
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.message.other {
+    background: rgb(245, 240, 240);
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+.username {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.time {
+    font-size: 0.8em;
+    color: grey;
+    margin-left: 5px;
+}
+
+#typingIndicator {
+    height: 20px;
+    font-style: italic;
+    color: rgb(95, 92, 92);
+}
+
+#messageForm {
+    display: flex;
+    align-items: center;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#messageForm button {
+    padding: 10px 15px;
+    background: skyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#messageForm button:hover {
+    background: rgb(106, 106, 202);
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 10px;
+    color: rgb(100, 198, 236);
+}
+
+.icon-button:hover {
+    color: rgb(63, 63, 204);
+}
+
+/* Styles for file messages */
+.message .file-attachment {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.message .file-attachment a {
+    text-decoration: none;
+    color: rgb(130, 130, 240);
+    font-weight: bold;
+}
+
+.message .file-attachment a:hover {
+    text-decoration: underline;
+}
+
+.message .file-icon {
+    font-size: 1.2em;
+    color:grey;
+}
+
+.message .image-attachment img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+

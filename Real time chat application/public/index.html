@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginScreen">
+        <h2 style="color: bisque;">Enter your username</h2>
+        <input type="text" id="usernameInput" placeholder="e.g., john_doe">
+        <button id="enterChat">Join Chat</button>
+        <p id="usernameError" style="color: red;"></p> </div>
+
+    <div id="chatContainer" style="display:none;">
+        <aside>
+            <h3>Online Users</h3>
+            <ul id="users"></ul>
+            <hr>
+            <h3>Blocked Users</h3>
+            <ul id="blockedUsersList"></ul> </aside>
+        <main>
+            <div id="messages"></div>
+            <p id="typingIndicator"></p>
+            <form id="messageForm">
+                <input type="file" id="fileInput" style="display: none;">
+                <button type="button" id="attachFileButton" class="icon-button">&#128206;</button>
+                <input type="text" id="messageInput" placeholder="Type a message..." autocomplete="off">
+                <button>Send</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
