@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="formTitle">Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="authBtn" onclick="handleAuth()">Login</button>
+        <p onclick="toggleAuth()" style="cursor:pointer; color: blue;">Don't have an account? Sign Up</p>
+    </div>
+
+    <script>
+        let isLogin = true;
+
+        function toggleAuth() {
+            isLogin = !isLogin;
+            document.getElementById('formTitle').innerText = isLogin ? "Login" : "Sign Up";
+            document.getElementById('authBtn').innerText = isLogin ? "Login" : "Sign Up";
+        }
+
+        async function handleAuth() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const endpoint = isLogin ? 'login' : 'signup';
+
+            const response = await fetch(`http://localhost:5000/api/${endpoint}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, password })
+            });
+
+            const data = await response.json();
+            if (response.ok) {
+                if (isLogin) {
+                    localStorage.setItem('token', data.token);
+                    window.location.href = 'weather.html';
+                } else {
+                    alert("Account created! Please login.");
+                    toggleAuth();
+                }
+            } else {
+                alert(data.error);
+            }
+        }
+    </script>
+</body>
+</html>
