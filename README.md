@@ -1,6 +1,6 @@
 # Web-Dev-Front-end-projects
 Weather Application
-  Tech stack:
+  ##Tech stack:
     HTML
     CSS
     Javascipt
@@ -9,7 +9,7 @@ Weather Application
     JWT auth token
 
 Realtime chat application
-  Tech stack:
+  ##Tech stack:
     HTML
     CSS
     Javascript
@@ -17,7 +17,7 @@ Realtime chat application
     Websocket
 
 Spotify
-  Tech stack:
+  ##Tech stack:
     HTML
     CSS
     Javascript
