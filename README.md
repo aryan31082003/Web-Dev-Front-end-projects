@@ -1,5 +1,5 @@
 # Web-Dev-Front-end-projects
-Weather Application
+## Weather Application
   ## Tech stack:
     HTML
     CSS
@@ -8,7 +8,7 @@ Weather Application
     Mongodb as database
     JWT auth token
 
-Realtime chat application
+## Realtime chat application
   ## Tech stack:
     HTML
     CSS
@@ -16,7 +16,7 @@ Realtime chat application
     Node js
     Websocket
 
-Spotify
+## Spotify
   ## Tech stack:
     HTML
     CSS
